@@ -95,7 +95,7 @@ height: 200px;
     
     main {
         display: grid;
-        grid-template-columns: auto 500px;
+        grid-template-columns: auto 600px;
       
         gap: 0px 5px;
         color: white;
