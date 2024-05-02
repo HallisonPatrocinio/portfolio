@@ -44,28 +44,3 @@ function botoesLaterais () {
 }
 
 botoesLaterais()
-
-let addFriend = document.querySelector("#add-friend")
-
-
-
-
-
-const imagens = document.querySelectorAll('.imagem');
-const overlay = document.getElementById('overlay');
-const fechar = document.getElementById('fechar');
-const imagemAmpliadaSrc = document.getElementById('imagem-ampliada-src');
-
-imagens.forEach(imagem => {
-    imagem.addEventListener('click', function() {
-        overlay.style.display = 'flex';
-        const src = this.getAttribute('src');
-        imagemAmpliadaSrc.setAttribute('src', src);
-        imagemAmpliadaSrc.style.maxWidth = '100%';
-        imagemAmpliadaSrc.style.maxHeight = '100%';
-    });
-});
-
-fechar.addEventListener('click', function() {
-    overlay.style.display = 'none';
-});
